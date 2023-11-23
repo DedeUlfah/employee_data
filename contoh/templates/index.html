@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Produk Section start -->
+<section id="product" class="product">
+  <div class="form-group">
+    <h2>Klasifikasi</h2>
+    <p>
+      Unggah file xlxs atau csv yang berisi data: Id, Pendidikan, Umur,
+      Jenis Kelamin, Pengalaman Kerja, Penerimaan
+    </p>
+
+    <form id="uploadForm" action="/proses_upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" class="file-upload-default" />
+      <button type="submit" class="btn btn-primary me-2"> <!-- Mengubah type menjadi "submit" -->
+        Submit
+      </button>
+    </form>
+
+    <div id="result-container" style="display: none;">
+      <h3>Hasil Klasifikasi:</h3>
+      <p id="result-text"></p>
+    </div>
+  </div>
+</section>
+<!-- Produk Section end -->
+
+</body>
+</html>
